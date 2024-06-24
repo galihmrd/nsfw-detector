@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 (async () => {
-    const model = await nsfwjs.load(`https://nsfwjs.com/model/`, { size: 299 });;
+    const model = await nsfwjs.load(`https://github.com/infinitered/nsfwjs/blob/master/models/inception_v3/model.json`, { size: 299 });;
 
     app.get("/detector", async(req, res) => {
         var url = req.query.url;
