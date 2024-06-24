@@ -1,10 +1,11 @@
 {
-  "name": "nsfw-detector",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "heroku-docker-nodejs-express",
+  "version": "0.0.1",
+  "description": "heroku-docker-nodejs-express",
+  "main": "./src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "npm i --no-optional",
+    "start": "node ./api/index.js"
   },
   "type": "module",
   "keywords": [],
